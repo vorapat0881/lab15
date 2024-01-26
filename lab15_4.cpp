@@ -17,3 +17,17 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a, int &b, int &c, int &d){
+	int ar[] = {a, b, c, d};
+	int N =sizeof(ar)/sizeof(ar[0]) ;
+for (int i = 0; i<N; i++){
+	int shuf = rand() % 4;
+	swap(ar[i],ar[shuf]);
+
+}
+	a = ar[0];
+	b = ar[1];
+	c = ar[2];
+	d = ar[3];
+}
